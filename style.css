@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(20,20,20);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 30px 30px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h1 {
+    font-size: 35px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.colors .color {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    transition: all 0.1s;
+}
+
+.colors .color:active {
+    filter: brightness(80%);
+    transform: scale(0.95);
+}
+
+.color i {
+    color: #fff;
+    font-size: 20px;
+}
+
+#red {
+    background: rgb(255, 0, 76);
+}
+
+#green {
+    background: rgb(15, 255, 83);
+}
+
+#blue {
+    background: rgb(0, 81, 255);
+}
+
+
+.text-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.text-box .text {
+    margin: 0 40px;
+    font-weight: 500;
+}
+
+#clear-btn {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(20, 20, 20);
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.1s;
+}   
+
+#clear-btn:active {
+    background: rgb(42, 42, 42);
+    transform: scale(0.95);
+}
+
+#clear-btn i {
+    color: #fff;
+    font-size: 20px;      
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        width: 90%;
+    }
+
+    .box h1 {
+        font-size:25px;
+        margin-bottom: 20px;
+    }
+
+    .colors .color {
+        width: 90px;
+        height: 90px;
+    }
+
+    .text-box .text {
+        margin: 0 26px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .text-box .text:first-child {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+    .text-box .text:last-child {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    #clear-btn {
+        margin-bottom: 0;
+        width: 140px;
+        /* height: 40px; */
+    }
+}
